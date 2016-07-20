@@ -1,5 +1,5 @@
 OBJS = bgra2rgb565_neon.S framebuffer.c newinput.c vncserver.c
-CFLAGS += -Wall -std=c11
+CFLAGS += -Wall -std=c11 -mfpu=neon
 LIBS := -lvncserver -lpng -ljpeg -lpthread -lssl -lcrypto -lz -lresolv
 
 all: aml-vnc
