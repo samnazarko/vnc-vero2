@@ -30,6 +30,8 @@ unsigned int *fbmmap;
 
 char framebuffer_device[256] = "/dev/fb0";
 
+int roundUpToPageSize(int x);
+
 struct fb_var_screeninfo scrinfo;
 struct fb_fix_screeninfo fscrinfo;
 
